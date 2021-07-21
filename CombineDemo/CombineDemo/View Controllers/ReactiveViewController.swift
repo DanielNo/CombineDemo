@@ -9,9 +9,22 @@ import UIKit
 import Combine
 
 class ReactiveViewController: UIViewController,UITextFieldDelegate {
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var submitButton: UIButton!
+    
+    @IBOutlet weak var usernameTextField: UITextField!{
+        didSet{
+            usernameTextField.accessibilityIdentifier = TestingIdentifiers.ReactiveViewController.userTextField.rawValue
+        }
+    }
+    @IBOutlet weak var passwordTextField: UITextField!{
+        didSet{
+            passwordTextField.accessibilityIdentifier = TestingIdentifiers.ReactiveViewController.passTextfield.rawValue
+        }
+    }
+    @IBOutlet weak var submitButton: UIButton!{
+        didSet{
+            submitButton.accessibilityIdentifier = TestingIdentifiers.ReactiveViewController.submitBtn.rawValue
+        }
+    }
     
     
     // Combine
@@ -30,12 +43,14 @@ class ReactiveViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         usernameTextField.delegate = self
         passwordTextField.delegate = self
-        self.createPipeline()
+        let token = self.validateToken()
     }
     
-    func createPipeline(){
+    
+    func validateToken(){//}->AnyPublisher<String,Never>{
         usernameSubject
         .sink { completion in
             print(completion)
