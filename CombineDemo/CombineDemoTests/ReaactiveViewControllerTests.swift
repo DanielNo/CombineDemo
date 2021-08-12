@@ -30,7 +30,6 @@ class ReaactiveViewControllerTests: XCTestCase {
     func testExample() throws {
         let textfield = UITextField(frame: .zero)
         
-        sut.sendTextToTextField(textfield, "usernameeeee")
 
         let exp = XCTestExpectation(description: "testing combine")
         exp.expectedFulfillmentCount = 2

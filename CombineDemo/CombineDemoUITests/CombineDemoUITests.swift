@@ -61,7 +61,7 @@ class CombineDemoUITests: XCTestCase {
         wait(forElement: userTextfieldElement, timeout: 5)
         passTextfield.tap()
         passTextfield.typeText(password)
-        
+        print("pass textfield value : \(passTextfield.value)")
         let submitBtn = app.buttons[TestingIdentifiers.ReactiveViewController.submitBtn.rawValue]
         wait(forElement: userTextfieldElement, timeout: 5)
         return submitBtn.isEnabled

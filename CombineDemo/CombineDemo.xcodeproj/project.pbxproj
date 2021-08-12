@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		9A2173D526A88A5000E1CCB6 /* ReaactiveViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaactiveViewControllerTests.swift; sourceTree = "<group>"; };
 		9A2173DB26A8B9EE00E1CCB6 /* TestingIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIdentifiers.swift; sourceTree = "<group>"; };
+		9A2173DF26A8CFD000E1CCB6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9A91DDD7269E0D44007A36F0 /* CombineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A91DDDA269E0D44007A36F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A91DDDC269E0D44007A36F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A2173DE26A8CFD000E1CCB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A2173DF26A8CFD000E1CCB6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A91DDCE269E0D44007A36F0 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +99,7 @@
 				9A91DDF0269E0D46007A36F0 /* CombineDemoTests */,
 				9A91DDFB269E0D46007A36F0 /* CombineDemoUITests */,
 				9A91DDD8269E0D44007A36F0 /* Products */,
+				9A2173DE26A8CFD000E1CCB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

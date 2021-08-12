@@ -89,14 +89,33 @@
                     <view key="view" contentMode="scaleToFill" id="dhV-ao-PxC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odN-cB-XLq">
+                                <rect key="frame" x="20" y="120" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F8Z-Dt-Edc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bgt-pv-y63"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="odN-cB-XLq" firstAttribute="centerX" secondItem="bgt-pv-y63" secondAttribute="centerX" id="0NY-9u-hmI"/>
+                            <constraint firstItem="odN-cB-XLq" firstAttribute="width" secondItem="dhV-ao-PxC" secondAttribute="width" multiplier="0.903382" id="XmD-C1-u9K"/>
+                            <constraint firstItem="odN-cB-XLq" firstAttribute="top" secondItem="bgt-pv-y63" secondAttribute="top" constant="32" id="XxN-Ib-7aO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GXc-Ra-Tk5"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="odN-cB-XLq" id="Nwl-Na-kOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5i-jb-GdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="27"/>
+            <point key="canvasLocation" x="1673.913043478261" y="26.785714285714285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5CR-KD-38M">
